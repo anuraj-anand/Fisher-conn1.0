@@ -1,0 +1,31 @@
+<ion-view view-title="Cart" name="Cart View" >
+
+  <h1>My Cart</h1> 
+
+
+ <div class = "row">
+
+   <div class = "col">Item Name</div>
+   <div class = "col">Item Description</div>
+   <div class = "col">Item Price</div>
+   <div class = "col">Item rating</div>
+   
+</div>
+ 
+
+   <ion-list>
+
+    <ion-item ng-repeat="item in itemlist" >
+
+        <ion-row >
+ 
+          <div class="col">{{item.id}}</div>
+          <div class = "col">{{item.price}}</div>
+
+        </ion-row>
+    </ion-item>
+  </ion-list>
+ 
+  <button class="button button-assertive" ng-click="checkout()">Check Out</button>
+
+</ion-view>
